@@ -1,0 +1,110 @@
+.ficha{
+    background-color: var(--cinza);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--vermelho);
+    padding: 3em 0;
+}
+
+.card__ficha{
+    
+    background-color: var(--cinza-secundario);
+    width: 80%;
+    height: 80%;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+
+    border: 1px solid var(--vermelho);
+
+    margin: 5em 0;
+}
+
+.ficha__titulo{
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    border-bottom: 1px solid var(--vermelho);
+    border-top: 1px solid var(--vermelho);
+}
+
+.ficha__conteudo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ficha__imagem{
+    width: 30%;
+    border: 2px solid var(--vermelho);
+    border-radius: 100%;
+}
+
+.ficha__lista{
+    text-align: start;
+    border-left: 1px solid var(--vermelho);
+    padding-left: 2em;
+}
+
+.lista__titulo, .lista__descricao{
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.lista__titulo{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.lista__descricao{
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+
+    .ficha{
+        height: auto;
+        padding: 0 0.5em;
+    }
+    .card__ficha{
+        width: 100%;
+        height: 100%;
+        padding: 1em 0;
+
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .ficha__conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ficha__imagem{
+        width: 50%;
+        margin-bottom: 2em;
+    }
+
+    .ficha__lista{
+        margin-bottom: 1em;
+        border: none;
+        padding: 0;
+    }
+
+    .lista__titulo{
+        border-left: 1px solid var(--vermelho);
+        border-bottom: 1px solid var(--vermelho);
+        padding-left: 0.1em;
+        padding-bottom: 0.1em;
+    }
+}

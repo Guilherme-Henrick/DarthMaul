@@ -1,0 +1,25 @@
+@import url(Styles/header.css);
+@import url(Styles/home.css);
+@import url(Styles/ficha.css);
+@import url(Styles/historia.css);
+@import url(Styles/rodape.css);
+
+
+:root{
+    --vermelho: #C20000;
+    --branco: #FFFFFF;
+    --preto: black;
+    --cinza: #101010;
+    --cinza-secundario: #202020;
+}
+
+a{
+    text-decoration: none;
+    color: var(--branco);
+}
+ body, html{
+    height: 100%;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: 'Roboto Mono', monospace;;
+ }
